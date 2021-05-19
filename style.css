@@ -1,0 +1,146 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#999999;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: #1E90FF;
+  padding: .5em;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.shark_logo{
+  float: left;
+}
+
+nav{
+  float: right
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav a:hover{
+   color: grey;
+}
+
+nav a:before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+  width: 100%;
+}
+
+.header h1{
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.heading1{
+  background-color: black;
+  height: 100px;
+  text-align: center;
+  padding: 28px;
+  margin-top: 5px;
+}
+.heading1 h1{
+  font-family: 'RocknRoll One', sans-serif;
+  color: grey
+}
+
+.left-col, .right-col{
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.center-col{
+  width: 50%;
+  float: left;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.left-h2{
+  margin-bottom: 5px;
+}
+.center-h2{
+  margin-bottom: 5px;
+}
+.right-h2{
+  margin-bottom: 5px;
+}
+
+.middle-body{
+  padding: 1%;
+  box-sizing: border-box;
+  min-height: 500px;
+}
+.middle-body h2{
+  text-align: center;
+  font-weight: 700;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  background-color: #BD312C;
+  width: 1865px;
+  height: auto;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+.social a{
+  text-decoration: none;
+}
+.social a i{
+  font-size: 1.1rem;
+}
+
